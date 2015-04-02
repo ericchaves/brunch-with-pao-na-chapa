@@ -1,0 +1,13 @@
+{
+  "name": "your-app",
+  "version": "0.0.1",
+  "main": "public/app.js",
+  "dependencies": {
+    "react": "~0.13.1"
+  },
+  "overrides": {
+    "react": {
+      "main": "react-with-addons.js"
+    }
+  }
+}
