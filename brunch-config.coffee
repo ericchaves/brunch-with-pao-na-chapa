@@ -17,12 +17,18 @@ exports.config =
       joinTo:
         'app.js': /^app/
         'vendor.js': /^(vendor|bower_components)/
+
       order:
         before: [
           "bower_components/react/react-with-addons.js"
+          "vendor/scripts/jquery.js"
+          "vendor/scripts/underscore.js"
+          "vendor/scripts/backbone.js"
+          "vendor/scripts/backbone.react.js"
         ]
-        
+
     stylesheets:
-      joinTo: 'app.css'
+      joinTo: 'styles.css'
+
     templates:
       joinTo: 'app.js'
